@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MC Top Ten</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+  <script src="script.js"></script>
+  <h3> MC Top Ten </h3>
+  <div>
+      <input type="text" id="ricerca"  onkeyup="cerca()" name="ricerca" placeholder="Cerca"><br/><br/>
+      <button class="button button3" onclick="popola()"> Inserisci </button>
+      <button class="button button3" onclick="ordina()"> Ordina </button>
+
+  <select class="styled-select" id="criterio">
+    <option value="0">Scegli il brano:</option>
+    <option value="1">Primo</option>
+    <option value="2">Ultimo</option>
+    <option value="3">Random</option>
+  </select>
+    <button class="button button3" onclick="estrai()"> Estrai</button>
+    <button class="button button3" onclick="condividi()"> Condividi </button>
+    </div>
+<div>
+<table class="styled-table" id="tabella">
+    <thead>
+        <tr>
+            <th>Autore</th>
+            <th>Titolo</th>
+            <th>Voto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Autore1</td>
+            <td>Titolo1</td>
+            <td>Voto1</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div>
+<table class="styled-table" id="tabellascelta">
+    <tbody>
+      <tr id="branoscelto" class="active-row">
+        <td><span class="fa fa-star"><span class="fa fa-star"><span class="fa fa-star"></span></td>
+        <td><span class="fa fa-star"><span class="fa fa-star"><span class="fa fa-star"></span></td>
+        <td><span class="fa fa-star"><span class="fa fa-star"><span class="fa fa-star"></span></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
